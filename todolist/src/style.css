@@ -1,0 +1,43 @@
+.input{border: 1px solid red}
+/* fade 与 CSSTransiton 的 classNames 的值匹配 */
+/* 入场动画 */
+
+.fade-enter, .fade-appear{
+  /* 未入场  onEnter*/
+  opacity: 0
+}
+.fade-enter-active, .fade-appear-active{
+  /* 入场中 onEntering*/
+  opacity: 1;
+  transition: opacity 1s ease-in
+}
+.fade-enter-done{
+  /* 已入场 onEntered*/
+  opacity: 1;
+  color: red
+}
+
+/* 离场动画 */
+
+.fade-exit{
+  /* 尚未离场 onExit*/
+  opacity: 1
+}
+.fade-exit-active{
+  /* 离场中 onExiting*/
+  opacity: 0;
+  transition: opacity 1s ease-in
+}
+.fade-exit-done{
+  /* 已离场 onEixted*/
+  opacity: 0
+}
+
+
+
+/* fade-appear{
+
+}
+fade-appear-active{
+
+} */
